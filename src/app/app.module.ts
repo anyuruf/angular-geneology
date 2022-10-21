@@ -13,11 +13,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { AppLayoutComponent } from './app-layout/app-layout.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    AppLayoutComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +32,10 @@ import { HttpClientModule } from '@angular/common/http';
     MatCardModule,
     MatMenuModule,
     MatIconModule,
+    MatListModule,
+    MatToolbarModule,
     MatButtonModule,
+    MatSidenavModule,
     LayoutModule,
     GraphQLModule,
     HttpClientModule

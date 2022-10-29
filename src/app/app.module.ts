@@ -17,6 +17,7 @@ import { AppLayoutComponent } from './components/app-layout/app-layout.component
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { MatListModule } from '@angular/material/list';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HomeModule,
     MatGridListModule,
     MatCardModule,
     MatMenuModule,
